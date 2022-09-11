@@ -1,0 +1,90 @@
+ <!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  
+<!-- Styles -->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+</head>
+
+<body >
+    <center>
+    <div><h1> Mon Beaue Liste De Tâche :) ! </h1></div>
+
+    <div class="table-content">
+        <table class="table  table-striped " id="table-list">
+            <thead class="table-dark">
+                <tr>
+                    <th>Id</th>
+                    <th>Nom</th>
+                    <th>Genre</th>
+                    <th>Email</th>
+                    <th>Ville</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Murtada</td>
+                    <td>Homme</td>
+                    <td>Fasteman7@gmail.com</td>
+                    <td>Kutum</td>
+
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sams</td>
+                    <td>Homme</td>
+                    <td>hhfdfg@hotmail.com</td>
+                    <td>Lyon</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mary</td>
+                    <td>Femme</td>
+                    <td>vccch@gmail.com</td>
+                    <td>Lile</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Ashly</td>
+                    <td>Femme</td>
+                    <td>asss@gmail.com</td>
+                    <td>Metz</td>
+    
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Eden</td>
+                    <td>Homme</td>
+                    <td>edd@hotmail.com</td>
+                    <td>Calais</td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="btn btn-info" id="add"><span class="glyphicon glyphicon-plus-sign"></span>Ajouter SVP!</button>
+    </div>    
+    
+    <br>
+
+<script src="bootstable.js"></script>
+<script>
+//apply
+$("#table-list").SetEditable();
+$('#add').click(function() {
+    rowAddNew('table-list', [1,2,3,4,5]);
+});
+
+</script>
+</body>
+</center>
+</html>

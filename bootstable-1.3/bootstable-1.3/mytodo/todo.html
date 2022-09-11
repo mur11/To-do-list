@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <title>jQuery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="todo.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head> 
+<body>
+  <div class="container">
+    <div class="jumbotron text-center bg-success text-white">
+      <h2> I Love You jQuery</h2>
+      <h4> On Peut Aller Plus Loin :) xd</h4>
+    </div>
+    <div class="form-row">
+      <div class="col-md-3">
+        <label>Nom <span class="errdiv"> *</span></label>
+        <input id="txtName" type="text" class="form-control txt txtName" placeholder="Le Nom SVP!" required>
+        <input id="txtId" type="hidden" class="form-control txt">
+      </div>
+      <div class="col-md-3 col-sm-6 col-6">
+        <label>Contact <span class="errdiv"> *</span></label>
+        <input id="txtContact" data-type="number" type="text" minlength="10" maxlength="10"
+          class="form-control txt txtContact" placeholder="Contact SVP!" required>
+      </div>
+      <div class="col-md-3 col-sm-6 col-6">
+        <label>Profession</label>
+        <input id="txtAltNo" type="text" class="form-control txt txtAltNo" minlength="10" maxlength="10"
+          placeholder="votre Proffission SVP!">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-6 col-sm-7">
+        <label>Addresse <span class="errdiv"> *</span></label>
+        <textarea id="txtAddress" class="form-control txt txtAddress" rows="3" minlength="15"
+          placeholder="Enterer Votre Address SVP!" required></textarea>
+      </div>
+    </div>
+    <div class="row pt-2">
+      <div class="col-md-2">
+        <button type="button" class="btn btn-success" id="btnSave">Enregistré</button>
+      </div>
+      <div class="col-md-2">
+        <button type="button" class="btn btn-secondary" id="btnClear">Supprimé</button>
+      </div>
+    </div>
+    <div class="row pt-3">
+      <div class="col-md-12 col-sm-12 col-12 p-2 ">
+        <table id="tblData" class="table table-bordered table-hover table-striped">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th> Nom</th>
+              <th>TéléPhone</th>
+              <th>Profession</th>
+              <th>Address</th>
+              <th class="text-center">Action</th>
+            </tr>
+          </thead>
+          <tbody> 
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="todo.js"></script>
+</body>
+
+</html>
